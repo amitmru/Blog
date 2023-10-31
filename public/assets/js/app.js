@@ -1,6 +1,6 @@
 const toggleCheckbox = document.querySelector('.toggle-checkbox');
 const searchtoggle = document.querySelector('.searchclick');
-const searchicon = document.querySelector('.fa-magnifying-glass')
+const searchicon = document.querySelector('.fa-magnifying-glass');
 
 toggleCheckbox.addEventListener('change', function () {
   if (this.checked) {
