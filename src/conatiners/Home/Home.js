@@ -1,4 +1,5 @@
 import React from 'react';
+// import '%PUBLIC_URL%/assets/js/app.js'
 
 function Home(props) {
     return (
