@@ -1,6 +1,24 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import ThumbUpIcon from '@mui/icons-material/ThumbUp';
+import FolderCopyOutlinedIcon from '@mui/icons-material/FolderCopyOutlined';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import List from '@mui/material/List';
+import { Link } from 'react-router-dom';
+import Box from '@mui/material/Box';
 
-function Lay_out(props) {
+function Lay_out({ children }) {
+
+    const iconItems = [
+        { label: "Dahsboard", icon: <HomeOutlinedIcon />, to: '/admin/dahsboard' },
+        { label: "Like", icon: <ThumbUpIcon />, to: '/admin/like' },
+        { label: "Content", icon: <FolderCopyOutlinedIcon />, to: '/admin/content' }
+    ]
+
     return (
         <div>
             <nav>
@@ -11,31 +29,60 @@ function Lay_out(props) {
                     <span className="logo_name">CodingLab</span>
                 </div>
                 <div className="menu-items">
+                    {/* <List>
+                        {iconItems.map((value, index) => (
+                            <ListItem
+                                key={index}
+                                component={Link}
+                                to={value.to}
+                            >
+                                <ListItemButton
+                                    sx={{
+                                        minHeight: 48,
+                                        px: 2.5,
+                                    }}
+                                >
+                                    <ListItemIcon
+                                        sx={{
+                                            minWidth: 0,
+                                            justifyContent: 'center',
+                                        }}
+                                    >
+                                        {value.icon}
+                                    </ListItemIcon>
+                                    <ListItemText primary={value.label} />
+                                </ListItemButton>
+                            </ListItem>
+                        ))}
+                    </List> */}
+                    {/* <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+                        {children}
+                    </Box> */}
                     <ul className="nav-links">
-                        <li><a href="#">
+                        <li><NavLink to="admin/dahsboard">
                             <i className="uil uil-estate" />
                             <span className="link-name">Dahsboard</span>
-                        </a></li>
-                        <li><a href="#">
+                        </NavLink></li>
+                        <li><NavLink to="/Content">
                             <i className="uil uil-files-landscapes" />
                             <span className="link-name">Content</span>
-                        </a></li>
-                        <li><a href="#">
+                        </NavLink></li>
+                        <li><NavLink to="#">
                             <i className="uil uil-chart" />
                             <span className="link-name">Analytics</span>
-                        </a></li>
-                        <li><a href="#">
+                        </NavLink></li>
+                        <li><NavLink to="#">
                             <i className="uil uil-thumbs-up" />
                             <span className="link-name">Like</span>
-                        </a></li>
-                        <li><a href="#">
+                        </NavLink></li>
+                        <li><NavLink to="#">
                             <i className="uil uil-comments" />
                             <span className="link-name">Comment</span>
-                        </a></li>
-                        <li><a href="#">
+                        </NavLink></li>
+                        <li><NavLink to="#">
                             <i className="uil uil-share" />
                             <span className="link-name">Share</span>
-                        </a></li>
+                        </NavLink></li>
                     </ul>
                     <ul className="logout-mode">
                         <li><a href="#">
@@ -53,7 +100,7 @@ function Lay_out(props) {
                         </li>
                     </ul>
                 </div>
-            </nav>
+            </nav >
             <section className="dashboard">
                 <div className="top">
                     <i className="uil uil-bars sidebar-toggle" />
@@ -147,7 +194,7 @@ function Lay_out(props) {
                     </div>
                 </div>
             </section>
-        </div>
+        </div >
 
     );
 }
