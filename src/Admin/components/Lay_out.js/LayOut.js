@@ -1,15 +1,5 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-import ThumbUpIcon from '@mui/icons-material/ThumbUp';
-import FolderCopyOutlinedIcon from '@mui/icons-material/FolderCopyOutlined';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import List from '@mui/material/List';
-import { Link } from 'react-router-dom';
-import Box from '@mui/material/Box';
 
 function Lay_out({ children }) {
 
@@ -30,7 +20,7 @@ function Lay_out({ children }) {
                 </div>
                 <div className="menu-items">
                     <ul className="nav-links">
-                        <li><NavLink to="/dahsboard">
+                        <li style={{cursor: 'pointer'}}><NavLink to="/dahsboard">
                             <i className="uil uil-estate" />
                             <span className="link-name">Dahsboard</span>
                         </NavLink></li>
