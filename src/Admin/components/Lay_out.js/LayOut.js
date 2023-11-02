@@ -13,11 +13,19 @@ import Box from '@mui/material/Box';
 
 function Lay_out({ children }) {
 
-    const iconItems = [
-        { label: "Dahsboard", icon: <HomeOutlinedIcon />, to: '/admin/dahsboard' },
-        { label: "Like", icon: <ThumbUpIcon />, to: '/admin/like' },
-        { label: "Content", icon: <FolderCopyOutlinedIcon />, to: '/admin/content' }
-    ]
+    // const iconItems = [
+    //     { label: "Dahsboard", icon: <HomeOutlinedIcon />, to: '/admin/dahsboard' },
+    //     { label: "Like", icon: <ThumbUpIcon />, to: '/admin/like' },
+    //     { label: "Content", icon: <FolderCopyOutlinedIcon />, to: '/admin/content' }
+    // ]
+
+    const handleToggleSwitch = (name) => {
+        console.log(name);
+    }
+
+    const handleSearch = () => {
+        console.log('search');
+    }
 
     return (
         <div>
@@ -103,10 +111,10 @@ function Lay_out({ children }) {
             </nav >
             <section className="dashboard">
                 <div className="top">
-                    <i className="uil uil-bars sidebar-toggle" />
+                    <i className="uil uil-bars sidebar-toggle" onClick={handleToggleSwitch('toggle')}/>
                     <div className="search-box">
                         <i className="uil uil-search" />
-                        <input type="text" placeholder="Search here..." />
+                        <input type="text" placeholder="Search here..." onChange={handleSearch()}/>
                     </div>
                     <img src="assets/Images/profile.jpg" alt />
                 </div>

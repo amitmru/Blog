@@ -34,7 +34,6 @@ function handleScroll() {
 window.addEventListener('scroll', handleScroll);
 
 // auto type words 
-
 document.addEventListener("DOMContentLoaded", function () {
   const options = {
     strings: ['CWS', 'Coder', 'Designer', 'Programmer'],

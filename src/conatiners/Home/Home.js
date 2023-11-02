@@ -8,7 +8,8 @@ function Home(props) {
                     <h4>Hello Everyone!</h4>
                     <h1>I'm
                         <div>
-                            <span className="multi-text" />
+                            {/* <span className="multi-text" /> */}
+                            <span>Blogger</span>
                             <span className="blink" />
                         </div>
                     </h1>
