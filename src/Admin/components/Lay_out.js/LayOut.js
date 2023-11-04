@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 function Lay_out({ children }) {
 
@@ -20,11 +20,11 @@ function Lay_out({ children }) {
                 </div>
                 <div className="menu-items">
                     <ul className="nav-links">
-                        <li style={{cursor: 'pointer'}}><NavLink to="/dahsboard">
+                        <li><Link to="/admin/dashboard">
                             <i className="uil uil-estate" />
-                            <span className="link-name">Dahsboard</span>
-                        </NavLink></li>
-                        <li><NavLink to="/Content">
+                            <span className="link-name">Dashboard</span>
+                        </Link></li>
+                        <li><NavLink to="#">
                             <i className="uil uil-files-landscapes" />
                             <span className="link-name">Content</span>
                         </NavLink></li>
@@ -72,7 +72,8 @@ function Lay_out({ children }) {
                     <img src="assets/Images/profile.jpg" alt />
                 </div>
             </section>
-
+            
+            
         </div >
 
     );

@@ -31,12 +31,12 @@ body::after {
     position: absolute;
 }
 
-body::after {
+/* body::after {
     height: 800px;
     background: url('svg/shadow-blue.svg') no-repeat 100% 0;
     left: 0;
     top: 0;
-}
+} */
 
 a {
     text-decoration: none;
