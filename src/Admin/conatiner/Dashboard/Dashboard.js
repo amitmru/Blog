@@ -1,12 +1,13 @@
 import React from 'react';
+import DashboardIcon from '@mui/icons-material/Dashboard';
 
 function Dashboard(props) {
     return (
-        <section className="dashboard">
+        // <section className="dashboard">
                 <div className="dash-content">
                     <div className="overview">
                         <div className="title">
-                            <i className="uil uil-tachometer-fast-alt" />
+                            <DashboardIcon style={{marginRight: '7px'}}/>
                             <span className="text">Dashboard</span>
                         </div>
                         <div className="boxes">
@@ -29,7 +30,6 @@ function Dashboard(props) {
                     </div>
                     <div className="activity">
                         <div className="title">
-                            <i className="uil uil-clock-three" />
                             <span className="text">Recent Activity</span>
                         </div>
                         <div className="activity-data">
@@ -86,12 +86,7 @@ function Dashboard(props) {
                         </div>
                     </div>
                 </div>
-            </section>
-        // <>
-            // {/* <br></br>
-            // <br></br>
-            // <h1>Hello!!</h1> */}
-        // </>
+                // </ section>
     );
 }
 

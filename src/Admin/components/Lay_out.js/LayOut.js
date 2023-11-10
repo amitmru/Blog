@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
+import Logo from '../../../conatiners/Images/Logo';
 
 function Lay_out({ children }) {
 
@@ -14,7 +15,8 @@ function Lay_out({ children }) {
             <nav className={toggle ? 'sidebar' : 'close'}>
                 <div className="logo-name">
                     <div className="logo-image">
-                        <img src="assets/Images/logo.png" alt />
+                        {/* <img src="assets/Images/logo.png" alt /> */}
+                        <Logo />
                     </div>
                     <span className="logo_name">CodingLab</span>
                 </div>
@@ -24,9 +26,9 @@ function Lay_out({ children }) {
                             <i className="uil uil-estate" />
                             <span className="link-name">Dashboard</span>
                         </Link></li>
-                        <li><NavLink to="#">
+                        <li><NavLink to="/admin/managecontent">
                             <i className="uil uil-files-landscapes" />
-                            <span className="link-name">Content</span>
+                            <span className="link-name">Manage Content</span>
                         </NavLink></li>
                         <li><NavLink to="#">
                             <i className="uil uil-chart" />
@@ -71,9 +73,8 @@ function Lay_out({ children }) {
                     </div>
                     <img src="assets/Images/profile.jpg" alt />
                 </div>
+                {children}
             </section>
-            
-            
         </div >
 
     );

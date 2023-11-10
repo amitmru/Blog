@@ -1,0 +1,13 @@
+{
+  "category": [
+    {
+      "id": 1,
+      "name": "Category Name",
+      "description": "This is a category description"
+    },
+    {
+      "category": "Business",
+      "id": 2
+    }
+  ]
+}
