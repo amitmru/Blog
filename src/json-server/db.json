@@ -1,12 +1,19 @@
 {
   "category": [
     {
-      "id": 1,
-      "name": "Category Name",
-      "description": "This is a category description"
+      "category": "Nature",
+      "description": "This medicine may be taken with or without food. If upset stomach occurs, take acyclovir with food. Store tablets and capsules at room temperature in a dry place. Store oral liquid acyclovir at room temperature. Shake well before use. Use oral syringes provided by pharmacy to measure the dose of liquid.",
+      "poster": "",
+      "icon": "",
+      "Articles": 0,
+      "id": 1
     },
     {
       "category": "Business",
+      "description": "Explore the dynamic world of business through our insightful blog. Stay ahead with expert analysis, industry trends, and actionable tips. Whether you're an entrepreneur, corporate professional, or aspiring business enthusiast, our content is tailored to empower and inspire success in today's competitive landscape. Uncover strategic insights, learn from real-world experiences, and navigate the complexities of the business realm with confidence. Elevate your business acumen with our engaging articles, interviews, and valuable resources.",
+      "poster": "",
+      "icon": "",
+      "Articles": 0,
       "id": 2
     }
   ]

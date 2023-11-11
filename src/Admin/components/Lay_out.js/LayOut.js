@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import Logo from '../../../conatiners/Images/Logo';
+import CategoryIcon from '@mui/icons-material/Category';
+
 
 function Lay_out({ children }) {
 
@@ -29,6 +31,10 @@ function Lay_out({ children }) {
                         <li><NavLink to="/admin/managecontent">
                             <i className="uil uil-files-landscapes" />
                             <span className="link-name">Manage Content</span>
+                        </NavLink></li>
+                        <li><NavLink to="/admin/category">
+                            <i className="uil uil-files-landscapes" />
+                            <span className="link-name">Category</span>
                         </NavLink></li>
                         <li><NavLink to="#">
                             <i className="uil uil-chart" />
@@ -66,7 +72,7 @@ function Lay_out({ children }) {
             </nav >
             <section className="dashboard">
                 <div className="top">
-                    <i className="uil uil-bars sidebar-toggle" onClick={() => handleToggleSwitch()}/>
+                    <i className="uil uil-bars sidebar-toggle" onClick={() => handleToggleSwitch()} />
                     <div className="search-box">
                         <i className="uil uil-search" />
                         <input type="text" placeholder="Search here..." />
